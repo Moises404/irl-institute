@@ -1,18 +1,24 @@
-# boiler404 #
+#boiler404
 -------------
 A boilerplate starter app for next level React404 projects featuring routes, navigation, sidebars, sitemap and user login. Don't forget your towel.
 
 Tech Stack
 -------------
 
-* [ES6](https://babeljs.io/docs/learn-es6/)
-* [SASS](http://sass-lang.com/)
-* [bourbon](http://bourbon.io/)
-* [Webpack](https://github.com/webpack/webpack)
-* [React](https://github.com/facebook/react)
-* [Alt](http://alt.js.org/)
-* [EsLint](http://eslint.org/)
-* [Express](http://expressjs.com/)
+* [ES6](https://babeljs.io/docs/learn-es6/): for next level js
+* [SASS](http://sass-lang.com/): for next level css
+* [bourbon](http://bourbon.io/): for ex next level css
+* [webpack](https://github.com/webpack/webpack): instagram uses it
+* [react](https://github.com/facebook/react): sips React kool aid once
+* [react-router](https://github.com/rackt/react-router): routing solution
+* [react-icons](https://github.com/gorangajic/react-icons): es6 optimized icons
+* [react-helmet](https://github.com/nfl/react-helmet): mothafucking react thing made by NFL lmao
+* [classnames](https://github.com/JedWatson/classnames): for React class name logic
+* [lodash](https://lodash.com/): jQuery for adults
+* [alt](http://alt.js.org/): React flux implementation
+* [esLint](http://eslint.org/): to enforce our coding standards
+* [express](http://expressjs.com/): servers
+
 
 Usage
 -------------
@@ -50,6 +56,7 @@ STRUCTURE
 └── webpack.config.babel.js     # Webpack config
 ```
 
+
 HTML CONFIG
 -------------
 To pass custom meta data and script tags in the `<Head>`, use the `config.json` in `app/components/App/` [react-helmet](https://github.com/nfl/react-helmet), now you will be able to enhance head dom part with one json configuration [file](https://github.com/darul75/web-react/blob/master/assets/config.json).
@@ -81,6 +88,7 @@ To pass custom meta data and script tags in the `<Head>`, use the `config.json` 
   ]
 }
 ```
+
 
 ## License
 
