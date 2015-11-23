@@ -1,12 +1,13 @@
-import React from 'react';
-import {Route} from 'react-router';
-import App from './components/App';
-import About from './components/About';
-import Contact from './components/Contact';
+import React from 'react'
+import {Route, IndexRoute} from 'react-router'
+import App from './components/App/App'
+import Home from './components/Home/Home'
+import Contact from './components/Contact/Contact'
 
 export default (
   <Route path="/" component={App}>
-    <Route path="/about" component={About}/>
+    <IndexRoute component={Home}/>
+    <Route path="/home" component={Home}/>
     <Route path="/contact" component={Contact}/>
   </Route>
-);
+)

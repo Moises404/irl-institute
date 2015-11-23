@@ -17,10 +17,19 @@ let config = {
     publicPath: `${baseUrl}/${version}/`
   },
   module: {
+    preLoaders: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader'
+      }
+    ],
     loaders: [
       {test: /\.js(x)?$/, loaders: ['react-hot', 'babel'], exclude: /node_modules/},
+      { test: /\.(jpe?g|png|gif|svg|woff|eot|ttf)$/, loader: 'url?limit=10000&name=[sha512:hash:base64:7].[ext]' },
       {test: /\.json$/, loaders: ['json']},
       {test: /\.css$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader')},
+      {test: /\.scss$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!sass-loader')},
       {test: /\.styl$/, loader: ExtractTextPlugin.extract('style-loader', 'css-loader!stylus-loader')},
     ]
   },

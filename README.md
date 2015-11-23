@@ -1,14 +1,107 @@
-# isomorphic-[react](https://facebook.github.io/react/)-[relay](https://facebook.github.io/relay/)-boilerplate
+boiler404
+-------------
+A boilerplate starter app for next level React404 projects featuring routes, navigation, sidebars, sitemap and user login. Don't forget your towel.
 
-**Work in progress!**
+Tech Stack
+-------------
 
-This project is more like a `tutorial` on how to quickly build an isomorphic app based on [Node](https://nodejs.org/en/), Facebook's [React](https://facebook.github.io/react/), [React Router](https://github.com/rackt/react-router), [Relay](https://facebook.github.io/relay/) and [GraphQL](http://graphql.org/). In Node.js we are used to split complex all-in-one applications into several smaller ones. Thus our code is easier to read, easier to maintain and projects become long-term sustainable.
+* [ES6](https://babeljs.io/docs/learn-es6/) : and you will learn React with awesome ECM6 features.
+* [SASS](http://sass-lang.com/): Syntactically Awesome Style Sheets
+* [bourbon](http://bourbon.io/): Bourbon Sass library
+* [Webpack](https://github.com/webpack/webpack) : amazing bundler, still to learn so much about it.
+* [React](https://github.com/facebook/react) : choosed because I love idea of Virtual DOM.
+* [Flux](https://facebook.github.io/flux/docs/overview.html) : flux and used implementation is [Alt](http://alt.js.org/)
+* [EsLint](http://eslint.org/): JS and JSX syntax validator.
+* [Express](http://expressjs.com/): Version 4.
 
-Every implementation step of this boilerplate is documented under the `docs` directory so you can build everything from scratch.
+Usage
+-------------
+1) BUNDLE:
+`npm run dev-server-client`
 
-# Start
+2) SERVE:
+`npm run dev-server`
 
-1. Follow the [implementation steps](docs) or just clone this repository.
-2. Start application HTTP server: `npm run app:server:start:dev`.
-3. Start application Webpack server: `npm run app:webpack:start`.
-4. Navigate to `http://localhost:4444`.
+3) VISIT `localhost:4040`
+
+STRUCTURE
+-------------
+```
+.
+├── /public/assets/             # Compiled output
+├── /node_modules/              # 3rd-party libraries and utilities
+├── /app/                       # Source code of the client application
+│   ├── /actions/               # Action creators that allow to trigger a dispatch to stores
+│   ├── /components/            # React components
+|       |── /__tests__/         # React components unit tests
+│   ├── /images/                # Image assets
+│   ├── /stores/                # Stores contain the application state and logic
+│   ├── /styles/                # CSS directory, includes core styles + bourbon
+│   ├── /utils/                # Helper functions
+│   ├── alt.js                 # Instance of [Alt](http://alt.js.org/)
+│   ├── client.js               # Client side app renderer script
+│   ├── routes.js               # React router configuration
+│   ├── server.js               # Server side app renderer script
+├── /scripts/                    # The source code of the server application
+│   ├── server.js               # Server startup script
+└── .babelrc                    # Babel config
+└── .eslintrc                   # Es lint rc
+└── package.json                # The list of 3rd party libraries and utilities
+└── webpack.config.babel.js     # Webpack config
+```
+
+HTML CONFIG
+-------------
+To pass custom meta data and script tags in the `<Head>`, use the `config.json` in `app/components/App/` [react-helmet](https://github.com/nfl/react-helmet), now you will be able to enhance head dom part with one json configuration [file](https://github.com/darul75/web-react/blob/master/assets/config.json).
+
+```json
+{
+  "title": "boiler404",
+  "meta":[
+    {
+      "name": "description",
+      "content": "Boilerplate for next level React404 projects."
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, initial-scale=1"
+    }
+  ],
+  "link": [
+    {
+      "rel": "shortcut icon",
+      "href": "/favicon.ico",
+      "type": "image/x-icon"
+    },
+    {
+      "rel": "icon",
+      "href": "/favicon.ico",
+      "type": "image/x-icon"
+    }
+  ]
+}
+```
+
+## License
+
+The MIT License (MIT)
+
+Copyright (c) 2015 ART404
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
