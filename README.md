@@ -5,14 +5,14 @@ A boilerplate starter app for next level React404 projects featuring routes, nav
 Tech Stack
 -------------
 
-* [ES6](https://babeljs.io/docs/learn-es6/) : and you will learn React with awesome ECM6 features.
-* [SASS](http://sass-lang.com/): Syntactically Awesome Style Sheets
-* [bourbon](http://bourbon.io/): Bourbon Sass library
-* [Webpack](https://github.com/webpack/webpack) : amazing bundler, still to learn so much about it.
-* [React](https://github.com/facebook/react) : choosed because I love idea of Virtual DOM.
-* [Flux](https://facebook.github.io/flux/docs/overview.html) : flux and used implementation is [Alt](http://alt.js.org/)
-* [EsLint](http://eslint.org/): JS and JSX syntax validator.
-* [Express](http://expressjs.com/): Version 4.
+* [ES6](https://babeljs.io/docs/learn-es6/)
+* [SASS](http://sass-lang.com/)
+* [bourbon](http://bourbon.io/)
+* [Webpack](https://github.com/webpack/webpack)
+* [React](https://github.com/facebook/react)
+* [Alt](http://alt.js.org/)
+* [EsLint](http://eslint.org/)
+* [Express](http://expressjs.com/)
 
 Usage
 -------------
