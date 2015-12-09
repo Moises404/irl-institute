@@ -1,0 +1,36 @@
+.Navigation {
+  position: fixed;
+  height: $NAV_HEIGHT;
+  width: 100%;
+  border-bottom: 2px solid $borderColor;
+  padding: 0 40px;
+  @include display(flex);
+  @include align-items(center);
+  z-index: 99999999;
+  background: white;
+  > * {
+    @include flex(1);
+    @include display(inline-flex);
+  }
+  svg {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.Navigation-menu {
+  @include justify-content(flex-start);
+}
+
+.Navigation-logo {
+  @include justify-content(center);
+}
+
+.Navigation-login {
+  @include justify-content(flex-end);
+}
+
+.Navigation-menu,
+.Navigation-login {
+  @include btn;
+}

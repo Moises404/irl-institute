@@ -22,13 +22,14 @@ Tech Stack
 
 Usage
 -------------
-1) BUNDLE:
-`npm run dev-server-client`
+DEV:
+  * `npm run start:dev`
+  * VISIT `localhost:8080` 
 
-2) SERVE:
-`npm run dev-server`
+BUILD:
+  * `npm run start`
+  * VISIT `process.ENV.PORT` || localhost:3000`
 
-3) VISIT `localhost:4040`
 
 STRUCTURE
 -------------
