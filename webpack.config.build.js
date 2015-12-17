@@ -27,7 +27,7 @@ module.exports = {
     hotUpdateChunkFilename: "update/[hash]/[id].update.js",
     hotUpdateMainFilename: "update/[hash]/update.json",
     path: path.join(__dirname, "dist"),
-    publicPath: "http://localhost:3000/",
+    publicPath: "/",
   },
 
   plugins: [
