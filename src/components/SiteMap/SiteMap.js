@@ -8,7 +8,13 @@ export default () => (
         <Link to="home">Home</Link>
       </li>
       <li>
-        <Link to="contact">Contact</Link>
+        <Link to="exhibitions">Exhibitions</Link>
+      </li>
+      <li>
+        <Link to="artists">Artists</Link>
+      </li>
+      <li>
+        <Link to="information">Information</Link>
       </li>
     </ul>
   </div>

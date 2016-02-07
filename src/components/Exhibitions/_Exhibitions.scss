@@ -1,20 +1,10 @@
-.Contact {
+.Exhibitions {
   background: white;
-  color: black;
+  color: $hacker;
   float: left;
   width: 100%;
   height: 100%;
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
-}
-.Contact-wrapper {
-	li {
-		list-style-type: none;
-		margin-bottom: 20px;
-
-		span:nth-child(1) {
-			font-weight: bolder;
-		}
-	}
 }

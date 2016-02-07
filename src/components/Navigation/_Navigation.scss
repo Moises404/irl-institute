@@ -2,15 +2,16 @@
   position: fixed;
   height: $NAV_HEIGHT;
   width: 100%;
-  border-bottom: 2px solid $borderColor;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
   padding: 0 40px;
   @include display(flex);
   @include align-items(center);
   z-index: 99999999;
-  background: white;
+  background: rgba(250, 250, 250, 0.5);
   > * {
     @include flex(1);
     @include display(inline-flex);
+    color: black;
   }
   svg {
     height: 100%;
@@ -33,4 +34,8 @@
 .Navigation-menu,
 .Navigation-login {
   @include btn;
+}
+
+.Navigation-link {
+  color: black !important;
 }

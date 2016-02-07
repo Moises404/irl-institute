@@ -1,9 +1,67 @@
 .Home {
-  background: $lemonPie;
+  background: white;
   float: left;
   width: 100%;
   height: 100%;
   @include display(flex);
   @include align-items(center);
   @include justify-content(center);
+}
+.Home-splash-wrapper {
+	width: auto;
+	@include display(flex);
+	@include align-items(center);
+	@include justify-content(center);
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background: white;
+}
+.Home-video {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	@include display(flex);
+	@include justify-content(center);
+	@include align-items(center);
+}
+.Home-video video {
+	height: 100%;
+	width: 300%;
+}
+.Home-center-header {
+	@include display(flex);
+	@include flex-direction(column);
+	@include justify-content(center);
+	@include align-items(center);
+	-webkit-margin-before: 0;
+	-webkit-padding-start: 0;
+	position: absolute;
+	color: white;
+	width: 100%;
+	height: 100%;
+	z-index: 40;
+	display: none;
+}
+.Home-center-header li:nth-child(1) {
+	@include display(flex);
+	font-size: 4em;
+	color: white;
+	font-weight: bold;
+}
+.Home-center-header li:nth-child(2) {
+	@include display(flex);
+	font-size: 1em;
+	color: white;
+}
+
+@media (max-width: 800px) {
+	.Home-splash-wrapper {
+		height: 300px;
+	}
+  	.Home-splash-wrapper #video {
+  	}
+	.Home-splash-wrapper #video video {
+	}
 }

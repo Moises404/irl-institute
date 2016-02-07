@@ -1,4 +1,4 @@
-.Contact {
+.Artists {
   background: white;
   color: black;
   float: left;
@@ -8,7 +8,7 @@
   @include align-items(center);
   @include justify-content(center);
 }
-.Contact-wrapper {
+.Artists-wrapper {
 	li {
 		list-style-type: none;
 		margin-bottom: 20px;
@@ -16,5 +16,19 @@
 		span:nth-child(1) {
 			font-weight: bolder;
 		}
+	}
+}
+.Artists-image {
+	width: 100%;
+	height: 100px;
+	display: block;
+
+	span {
+		background-image: url(../images/logo.png);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		height: 100%;
 	}
 }
