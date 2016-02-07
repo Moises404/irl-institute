@@ -15,7 +15,7 @@ class Contact extends React.Component {
                 <br></br>
                 <span>negron.space@gmail.com</span>
                 <br></br>
-                <span>mbrosen@gmail.com</span>
+                <span>mbrrosen@gmail.com</span>
             </li>
 
             <li>
