@@ -1,5 +1,4 @@
 import React from 'react'
-import DumbComponent from '../DumbComponent/DumbComponent'
 import {MdMenu, MdPersonAdd} from 'react-icons'
 // import Logo from '../Logo/Logo'
 import AppActions from '../../actions/AppActions'

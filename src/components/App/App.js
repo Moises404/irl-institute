@@ -8,7 +8,6 @@ import AppActions from '../../actions/AppActions'
 import cn from 'classnames'
 import Sidebar from '../Sidebar/Sidebar'
 import SiteMap from '../SiteMap/SiteMap'
-import Login from '../Login/Login'
 import User from '../User/User'
 import scriptLoader from '../../utils/scriptLoader'
 import {isEmpty} from 'lodash'
@@ -35,16 +34,6 @@ class App extends React.Component {
     super(props)
   }
 
-  componentDidMount () {
-    if (typeof window.OAuth === 'undefined') this.attachOAuth(() => {
-      console.log('OAuth initialized.')
-    })
-  }
-
-  attachOAuth (cb) {
-    scriptLoader('http://api.art404.com/oauth/oauth.min.js', () => cb() )
-  }
-
   render() {
     console.log('APP PROPS >>> ', this.props)
     //children are the routes
@@ -62,9 +51,6 @@ class App extends React.Component {
         <Navigation />
         <Sidebar>
           <SiteMap links={[]} />
-        </Sidebar>
-        <Sidebar className="right">
-          {isEmpty(app.user) ? <Login /> : <User user={app.user} />}
         </Sidebar>
         <div className="App-wrap">
           {children}

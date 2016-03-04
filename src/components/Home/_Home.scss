@@ -1,5 +1,5 @@
 .Home {
-  background: white;
+  background: #c8c8c9;
   float: left;
   width: 100%;
   height: 100%;
@@ -16,7 +16,7 @@
 	height: 100%;
 	width: 100%;
 	position: relative;
-	background: white;
+	background: #c8c8c9;
 }
 .Home-video {
 	width: 100%;
@@ -25,11 +25,16 @@
 	@include display(flex);
 	@include justify-content(center);
 	@include align-items(center);
+	video {
+		height: 100%;
+		width: 100%;
+	}
 }
-.Home-video video {
-	height: 100%;
-	width: 300%;
+
+.Home-gif {
+	display: none;
 }
+
 .Home-center-header {
 	@include display(flex);
 	@include flex-direction(column);
@@ -60,8 +65,15 @@
 	.Home-splash-wrapper {
 		height: 300px;
 	}
-  	.Home-splash-wrapper #video {
+  	.Home-video {
+  		display: none;
   	}
-	.Home-splash-wrapper #video video {
-	}
+  	.Home-gif {
+  		width: 100%;
+  		height: 100%;
+  		@include display(flex);
+  		@include align-items(center);
+  		overflow: hidden;
+  		img { width: 100%; }
+  	}
 }

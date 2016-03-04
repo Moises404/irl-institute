@@ -28,10 +28,14 @@ app.use((req, res, next) => {
       `<!DOCTYPE html>`,
       `<html>`,
         `<head>`,
-          `<title>${helmet.title}</title>`,
+          `<title>IRL Institute</title>`,
           helmet.meta,
           helmet.link,
           `<meta charset="utf-8"/>`,
+          `<meta name="viewport" content="width=device-width, initial-scale=1.0">`,
+          `<meta name="description" content="In Real Life Institute"/>`,
+          `<meta name="keywords" content="Exhibition, Event Space, NYC, Miami, Gallery, Technology"/>`,
+          `<link rel="shortcut icon" href="images/favicon.ico">`,
           `<link rel="stylesheet" href="/client.css"></link>`,
         `</head>`,
         `<body>`,
@@ -46,5 +50,4 @@ app.use((req, res, next) => {
 })
 
 export default app
-
 

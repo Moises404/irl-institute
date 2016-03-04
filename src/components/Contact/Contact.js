@@ -1,7 +1,5 @@
 import React from 'react'
 import {MdMenu, MdContactMail} from 'react-icons'
-import DumbComponent from '../DumbComponent/DumbComponent'
-
 
 class Contact extends React.Component {
   static displayName = 'Contact'

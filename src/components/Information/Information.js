@@ -1,24 +1,17 @@
 import React from 'react'
-import {MdMenu, MdContactMail} from 'react-icons'
-import DumbComponent from '../DumbComponent/DumbComponent'
-
 
 class Information extends React.Component {
   static displayName = 'Information'
-
-  // <span className="Bio-image">
-          //   <span></span>
-          // </span>
 
   render () {
     return (
       <div className="Information">
         <ul className="Information-wrapper">    
             <li>    
-                Jenielift is an alternative exhibition space that focuses on innovative procedures and thinking. Thegoal of the space is to create an environment for artists, writers, and musicians to make and exhibit work that will contribute to an international critical contemporary dialogue.
+                The In Real Life Institute (IRL Institute), formerly known as JenieLift, is an independent contemporary art institution that collects, preserves, interprets and represents works of art of the highest quality, representing artistic practices emerging in millennial culture.
             </li> 
             <li> 
-                The programming at Jenielift consists of: curated exhibitions; educational programs; off-site projects; guest curatorial projects; and presentations, talks, and concerts. An emphasis will also be placed on publishing scholarly catalogs to accompany exhibitions and events. These catalogues will ultimately expand the dialogue of the space beyond the local and regional and push it into the national and international.
+                The programming at IRL consists of: physical exhibitions; virtual reality exhibitions; digital exhibitions; guest curatorial projects; lectures; independent publishing; educational programs; offsite projects; and music events.
             </li>
         </ul>
       </div>
