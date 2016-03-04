@@ -11,6 +11,7 @@
   > * {
     @include flex(1);
     @include display(inline-flex);
+    @include justify-content(center);
     color: black;
   }
   svg {
@@ -19,16 +20,18 @@
   }
 }
 
-.Navigation .Navigation-menu {
-  display: none;
-}
-
 .Navigation-logo {
   @include justify-content(center);
 }
 
 .Navigation-link {
-  color: black !important;
+  text-align: center !important;
+  display: inline-block !important;
+  text-decoration: none !important;
+}
+
+.Navigation .Navigation-menu {
+  display: none;
 }
 
 .Navigation-link.info { display: none; }
@@ -37,7 +40,6 @@
 @media (max-width: 800px) {
   .Navigation .Navigation-menu {
     @include display(flex);
-    @include justify-content(flex-start);
     background-image: url('../images/menu-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -46,5 +48,5 @@
   }
 
   .Navigation-link.info { display: block; }
-  .Navigation-link.information { display: none; }
+  .Navigation-link.information { display: none !important; }
 }

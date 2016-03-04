@@ -15,7 +15,6 @@ class Home extends React.Component {
               </video>
           </div>
           <div className="Home-gif">
-              <img src="images/IRL_logo_whiteWall.gif"/>
           </div>  
         </section>
       </div>
