@@ -21,7 +21,8 @@ class Navigation extends React.Component {
         </div>
         
         <Link className="Navigation-link" to="home">Home</Link>
-        <Link className="Navigation-link" to="information">Information</Link>
+        <Link className="Navigation-link info" to="information">Info</Link>
+        <Link className="Navigation-link information" to="information">Information</Link>
         <Link className="Navigation-link" to="contact">Contact</Link>
       </nav>
     )

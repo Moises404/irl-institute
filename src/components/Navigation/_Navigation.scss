@@ -19,23 +19,32 @@
   }
 }
 
-.Navigation-menu {
-  @include justify-content(flex-start);
+.Navigation .Navigation-menu {
+  display: none;
 }
 
 .Navigation-logo {
   @include justify-content(center);
 }
 
-.Navigation-login {
-  @include justify-content(flex-end);
-}
-
-.Navigation-menu,
-.Navigation-login {
-  @include btn;
-}
-
 .Navigation-link {
   color: black !important;
+}
+
+.Navigation-link.info { display: none; }
+.Navigation-link.information { display: block; }
+
+@media (max-width: 800px) {
+  .Navigation .Navigation-menu {
+    @include display(flex);
+    @include justify-content(flex-start);
+    background-image: url('../images/menu-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    @include btn;
+  }
+
+  .Navigation-link.info { display: block; }
+  .Navigation-link.information { display: none; }
 }

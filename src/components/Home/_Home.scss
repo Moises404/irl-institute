@@ -25,9 +25,12 @@
 	@include display(flex);
 	@include justify-content(center);
 	@include align-items(center);
+	background: #c8c8c9;
+	
 	video {
 		height: 100%;
 		width: 100%;
+		background: #c8c8c9;
 	}
 }
 
