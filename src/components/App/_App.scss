@@ -25,7 +25,7 @@
   transform: translate3d(0, 0, 0);
 	display: table;
 	width: 100%;
-  padding-top: $NAV_HEIGHT;
+  padding-top: 0;
   > *:first-child {
     float: left;
     width: 100%;

@@ -48,10 +48,6 @@ class App extends React.Component {
     return (
       <div className={classes}>
         <Helmet {... cfg} />
-        <Navigation />
-        <Sidebar>
-          <SiteMap links={[]} />
-        </Sidebar>
         <div className="App-wrap">
           {children}
         </div>
@@ -62,3 +58,9 @@ class App extends React.Component {
 }
 
 export default connectToStores(App)
+
+
+// <Navigation />
+// <Sidebar>
+//   <SiteMap links={[]} />
+// </Sidebar>
